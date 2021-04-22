@@ -4,13 +4,20 @@
 	"description": "",
 	"main": "index.js",
 	"dependencies": {
-		"loadtest": "^5.1.2"
+		"loadtest": "^5.1.2",
+		"pm2": "^4.5.6"
 	},
 	"devDependencies": {},
 	"scripts": {
 		"clusters": "node cluster.js",
 		"loadtest": "loadtest -n 50000 http://localhost:3000",
-		"zero": "node zero-downtime.js"
+		"zero": "node zero-downtime.js",
+		"pm2Start": "pm2 start pm2.js -i -1 -f",
+		"pm2Ls": "pm2 list",
+		"pm2Stop": "pm2  stop pm2",
+		"pm2Del": "pm2  delete pm2",
+		"pm2Log": "pm2  logs",
+		"pm2Mon": "pm2  monit"
 	},
 	"repository": {
 		"type": "git",
