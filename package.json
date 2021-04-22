@@ -1,0 +1,25 @@
+{
+	"name": "nodejs_scaling",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"loadtest": "^5.1.2"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"clusters": "node cluster.js",
+		"loadtest": "loadtest -n 50000 http://localhost:3000",
+		"clusterLoadTest": "node cluster.js && loadtest -n 500 http://localhost:3000 "
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FoushWare/Nodejs_Scaling.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/FoushWare/Nodejs_Scaling/issues"
+	},
+	"homepage": "https://github.com/FoushWare/Nodejs_Scaling#readme"
+}
