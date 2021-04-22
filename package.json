@@ -10,7 +10,7 @@
 	"scripts": {
 		"clusters": "node cluster.js",
 		"loadtest": "loadtest -n 50000 http://localhost:3000",
-		"clusterLoadTest": "node cluster.js && loadtest -n 500 http://localhost:3000 "
+		"zero": "node zero-downtime.js"
 	},
 	"repository": {
 		"type": "git",
